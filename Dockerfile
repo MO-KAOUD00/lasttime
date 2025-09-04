@@ -1,4 +1,4 @@
-FROM maven:3.6.3-jdk-21-slim
+FROM openjdk:21-jdk-slim
 COPY src /app/src
 COPY pom.xml /app
 RUN mvn -f /app/pom.xml clean package
